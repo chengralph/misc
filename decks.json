@@ -1,0 +1,44 @@
+{
+  deck_set_1:
+  {
+    "Deck_name": "Relasianship",
+    "Questions": [
+      "If you wouldn't date anyone below 5ft 10in (178cm), take 3 sips.",
+      "If you were or are in a long distance relationship during COVID, take 2 sips.",
+      "Ramen or Pho? Which is better? Losing team takes 3 sips.",
+      "Categories: Asian alcohol. Loser takes 2 sips.",
+      "If you have ever went for boba on a first date, take 4 sips.",
+      "If you are below Gold in League of Legends, take 7 sips. If you don't play League of Legends, take 5 sips of water.",
+      "If you get asian flush, take 1 sip.",
+      "If you compared your significant other to an animal e.g. frog, squid, take 5 sips",
+      "If your significant other plays League of Legends instead of watching kdrama with you, take 2 sips",
+      "If your main form on activity in your relationship is kdrama, take 2 sips",
+      "Kdrama or Running man? Losing team takes 2 sips.",
+      "If you bring your phone to poop, take 1 sip.",
+      "If you drink tea, take 2 sips of tea.",
+      "Tea or Coffee? Losing team takes 1 sip.",
+      "If your significant other says they would not want a uterus, take 3 sips.",
+      "If you think It's Okay To Not Be Okay shouldn't be kdrama of 2020, take 8 sips.",
+      "If your parents would never approve of an interracial relationship, take 2 sips.",
+      "If you would date a vegan, take 10 sips.",
+      "Chick-Fil-A or Mcdonald's Fries? Losing team takes 3 sips.",
+      "Categories: League of Legends Champions. Loser takes 4 sips",
+      "Categories: Religion. Loser takes 1 sips",
+  
+
+
+
+
+    ],
+    "Creator": "Ralph Cheng",
+    "Category": "Relationship"
+  },
+
+  deck_set_2:
+  {
+    "Deck_Name": "Empty"
+    "Questions": [],
+    "Creator": "Ralph Cheng",
+    "Category": "Anything"
+  }
+}
