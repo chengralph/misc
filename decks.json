@@ -1,5 +1,5 @@
 {
-  deck_set_1:
+  "deck_set_1":
   {
     "Deck_name": "Relasianship",
     "Questions": [
@@ -22,23 +22,32 @@
       "If your parents would never approve of an interracial relationship, take 2 sips.",
       "If you would date a vegan, take 10 sips.",
       "Chick-Fil-A or Mcdonald's Fries? Losing team takes 3 sips.",
-      "Categories: League of Legends Champions. Loser takes 4 sips",
-      "Categories: Religion. Loser takes 1 sips",
-  
-
-
-
-
+      "Categories: League of Legends Champions. Loser takes 4 sips.",
+      "Categories: Religion. Loser takes 1 sips.",
+      "If you attempted a Chloe Ting Workout, do 10 situps or take a shot.",
+      "If you speak three language or more, take 4 sips.",
+      "If you've been to a Kpop concert, take 1 sip.",
+      "If you've ever been to an Anime convention, take 4 sips and call yourself a weeb.",
+      "Categories: Sexual Fetishes. Loser takes 5 sips.",
+      "If you are currently wearing Uniqlo, strip it off or take 5 sips.",
+      "Categories: Asian Cosmetic Brands. Loser takes 1 sip.",
+      "If you sleep with plushies at night take 2 sips.",
+      "If you're using someone else's Netflix account, take 6 sips.",
+      "If you have an app to remind you to drink water, take 5 sips of water",
+      "If you have an RGB keyboard, take 2 sips. If you have programmed it, take 4 sips"
     ],
-    "Creator": "Ralph Cheng",
+    "Creators": [
+      "Ralph Cheng",
+      "Nicle Wan"
+    ],
     "Category": "Relationship"
   },
 
-  deck_set_2:
+  "deck_set_2":
   {
-    "Deck_Name": "Empty"
+    "Deck_Name": "Empty",
     "Questions": [],
-    "Creator": "Ralph Cheng",
+    "Creators": "Ralph Cheng",
     "Category": "Anything"
   }
 }
