@@ -11,3 +11,32 @@ body {
   cursor: pointer;
   display: inline-block;
 }
+
+.centerDiv
+{
+ padding: 20%;
+ width: 60%;
+ height:200px;
+ margin: 0 auto;
+ background-color:	rgba(255, 255, 255);
+}
+.back_card
+{
+ width: 45%;
+ height:700px;
+ background-color: rgba(255, 255, 255);
+ float:left;
+}
+.front_card
+{
+ width: 45%;
+ height: 600px;
+ background-color: rgba(255, 255, 255);
+ float:left;
+}
+.buttons_class
+{
+  margin-right: 400px;
+  width: 50%;
+  height:70px;
+  margin: 0 auto;
