@@ -30,10 +30,9 @@ class deck:
 
     def reverse_draw(self):
         if self.current_index < 2:
-            return 0
-        self.current_index -= 2
-        card = self.questions[self.current_index]
-        self.current_index += 1
+            return self.questions[self.current_index - 1], self.current_index, len(self.questions)
+        self.current_index -= 1
+        card = self.questions[self.current_index - 1]
         return card, self.current_index, len(self.questions)
 
 if __name__ == "__main__":

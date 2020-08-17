@@ -8,9 +8,9 @@
 {% block body %}
 <div class="centerDiv">
   <div class="back_card">
-    <img src ="{{ url_for('static', filename='images/covidflush.png') }}" width=400px height=600px>
+    <img src ="{{ url_for('static', filename='images/covidflush.png') }}" width=400px height=600px onclick="goDraw()">
   </div>
-  <div class="front_card">
+  <div class="front_card" onclick="goReverse()">
     <div id="card_value">
       {{ card_value }}
     </div>
@@ -59,7 +59,7 @@
 }
 
 
-#card_value {
+#card_value{
   font: 200 px Arial, snas-serif;
 }
 
