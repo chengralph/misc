@@ -7,18 +7,15 @@
 
 {% block body %}
 <div class="centerDiv">
-<div class="back_card">
-  <img src ="{{ url_for('static', filename='images/covidflush.png') }}" width=400 height=600px>
-</div>
-<div class="front_card">
-  <div id="card_value">
-    {{ card_value }}
+  <div class="back_card">
+    <img src ="{{ url_for('static', filename='images/covidflush.png') }}" width=400 height=600px>
+  </div>
+  <div class="front_card">
+    <div id="card_value">
+      {{ card_value }}
+    </div>
   </div>
 </div>
-</div>
-
-
-
 <div class="buttons_class">
   <div id="index">
     {{ index }}
@@ -31,32 +28,31 @@
 
 <style>
 
+.centerDiv
 {
- width: 50%;
- height:100px;
+ width: 70%;
  margin: 0 auto;
- background-color:	rgba(255, 255, 255);
+ padding: 5%;
+ position: relative;
+ text-align: center;
 }
-.back_card
+
+.back_card, .front_card
 {
  width: 400px;
  height:600px;
  background-color: rgba(255, 255, 255);
  margin-right: 3%;
  border: 5px solid #000000;
+ text-align: center;
+ margin:0 4px;
 }
-.front_card
-{
- width: 400px;
- height: 600px;
- background-color: rgba(255, 255, 255);
- margin-left: 3%;
- border: 5px solid #000000;
-}
+
+
 .buttons_class
 {
   width: 100px;
-  height:700px;
+  height: 100px;
   margin: 0 auto;
 }
 </style>
