@@ -20,7 +20,6 @@ class deck:
     def shuffle(self):
         random.shuffle(self.questions)
         self.current_index = 0
-        print(self.questions)
 
     def draw(self):
         if self.current_index >= len(self.questions):

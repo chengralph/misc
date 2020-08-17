@@ -5,23 +5,62 @@
 
 
 {% block body %}
-
+<div class="centerDiv">
 <div class="back_card">
   <img src ="{{ url_for('static', filename='images/strawberry.jpg') }}">
 </div>
-
-
-<div id="card_value">
-  {{ card_value }}
+<div class="front_value">
+  <div id="card_value">
+    {{ card_value }}
+  </div>
+</div>
 </div>
 
-<div id="index">
-  {{ index }}
+
+
+<div class="buttons_class">
+  <div id="index">
+    {{ index }}
+  </div>
+  <button class="btn shuffle" type="button" onclick="goShuffle()">Shuffle</button>
+  <button class="btn draw" type="button" onclick="goDraw()">Draw</button>
+  <button class="btn reverse" type="button" onclick="goReverse()">Reverse</button>
 </div>
 
-<button class="btn shuffle" type="button" onclick="goShuffle()">Shuffle</button>
-<button class="btn draw" type="button" onclick="goDraw()">Draw</button>
-<button class="btn reverse" type="button" onclick="goReverse()">Reverse</button>
+
+<style>
+
+  .centerDiv
+  {
+   margin-top: 1000px;
+   width: 60%;
+   height:200px;
+   margin: 0 auto;
+   background-color:	rgba(255, 255, 255);
+  }
+  .back_card
+  {
+   width: 50%;
+   height:500px;
+   background-color: rgba(255, 255, 255);
+   float:left;
+  }
+  .front_card
+  {
+   width: 50%;
+   height:500px;
+   background-color: rgba(255, 255, 255);
+   float:left;
+  }
+  .buttons_class
+  {
+    float: top;
+    width: 50%;
+    height:70px;
+    background-color:#00000 ;
+    margin: 0 auto;
+
+</style>
 
 <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 

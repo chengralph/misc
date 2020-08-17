@@ -11,30 +11,3 @@ body {
   cursor: pointer;
   display: inline-block;
 }
-
-/* On mouse-over */
-.btn:hover {background: #eee;}
-
-.success {color: green;}
-
-.centerDiv
-{
- width: 60%;
- height:200px;
- margin: 0 auto;
- background-color:#00000 ;
-}
-.back_card
-{
- width: 50%;
- height:200px;
- background-color:#00000;
- float:left;
-}
-.card_value
-{
- width: 50%;
- height:200px;
- background-color:#00000;
- float:left;
-}
