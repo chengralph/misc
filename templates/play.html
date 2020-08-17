@@ -8,7 +8,7 @@
 {% block body %}
 <div class="centerDiv">
   <div class="back_card">
-    <img src ="{{ url_for('static', filename='images/covidflush.png') }}" width=400 height=600px>
+    <img src ="{{ url_for('static', filename='images/covidflush.png') }}" width=400px height=600px>
   </div>
   <div class="front_card">
     <div id="card_value">
@@ -20,9 +20,9 @@
   <div id="index">
     {{ index }}
   </div>
-  <button class="btn shuffle" type="button" onclick="goShuffle()">Shuffle</button>
-  <button class="btn draw" type="button" onclick="goDraw()">Draw</button>
-  <button class="btn reverse" type="button" onclick="goReverse()">Reverse</button>
+  <button class="btn_shuffle" type="button" onclick="goShuffle()">Shuffle</button>
+  <button class="btn_draw" type="button" onclick="goDraw()">Draw</button>
+  <button class="btn_reverse" type="button" onclick="goReverse()">Reverse</button>
 </div>
 
 
@@ -30,24 +30,39 @@
 
 .centerDiv
 {
- width: 70%;
- margin: 0 auto;
- padding: 5%;
- position: relative;
- text-align: center;
+   width: 1000px;
+   height: 700px;
+   position: absolute;
+   left: 30%;
+   top: 30%;
+   /* margin-left: -1000px;
+   margin-top: -100px; */
+   display: inline-block;
 }
 
-.back_card, .front_card
+
+.front_card
 {
  width: 400px;
- height:600px;
+ height: 600px;
  background-color: rgba(255, 255, 255);
- margin-right: 3%;
- border: 5px solid #000000;
- text-align: center;
- margin:0 4px;
+ border: thin black solid;
+ float:right
 }
 
+.back_card
+{
+  width: 400px;
+  height: 600px;
+  background-color: rgba(255, 255, 255);
+  border: thin black solid;
+  float: left
+}
+
+
+#card_value {
+  font: 200 px Arial, snas-serif;
+}
 
 .buttons_class
 {
