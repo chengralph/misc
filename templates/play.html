@@ -5,42 +5,26 @@
 
 
 {% block body %}
-<div class="card_value">
-  {{ card_value }}
-<style>
- .centerDiv
- {
-   width: 60%;
-   height:200px;
-   margin: 0 auto;
-   background-color:#FFA500 ;
- }
- .div1
- {
-   width: 50%;
-   height:200px;
-   background-color:#A52A2A ;
-   float:left;
- }
- .div2
- {
-   width: 50%;
-   height:200px;
-   background-color:#FFA500 ;
-   float:left;
- }
-</style>
+
+<div class="back_card">
+  <img src ="{{ url_for('static', filename='images/strawberry.jpg') }}">
 </div>
 
+
+<div id="card_value">
+  {{ card_value }}
+</div>
 
 <div id="index">
   {{ index }}
 </div>
+
 <button class="btn shuffle" type="button" onclick="goShuffle()">Shuffle</button>
 <button class="btn draw" type="button" onclick="goDraw()">Draw</button>
 <button class="btn reverse" type="button" onclick="goReverse()">Reverse</button>
 
 <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
 
 <script>
   function goReverse(){
