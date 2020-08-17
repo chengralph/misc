@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+
+{% block body %}
+<div id="card_value">
+  {{ card_value }}
+</div>
+<div id="index">
+  {{ index }}
+</div>
+<button class="btn shuffle" type="button" onclick="goShuffle()">Shuffle</button>
+<button class="btn draw" type="button" onclick="console.log(':()'); goDraw()">Draw</button>
+<style>
+.shuffle{
+  width: 100px;
+  height: 100px;
+  color: green;
+}
+</style>
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<script>
+    function goDraw(){
+      $.ajax({
+        method: "POST",
+        url: "/game/draw",
+     }).done(function(card) {
+       document.getElementById("card_value").innerHTML = card.status;
+       console.log(card.status);
+       });
+    }
+
+    function goShuffle(){
+        $.ajax({
+          method: "POST",
+          url: "/game/shuffle",
+         context: {
+           "status": "hi"
+         }
+       }).done(function(r) {
+         console.log(r);
+        });
+    }
+</script>
+
+{% endblock %}
