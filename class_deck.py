@@ -20,6 +20,7 @@ class deck:
     def shuffle(self):
         random.shuffle(self.questions)
         self.current_index = 0
+        print(self.questions)
 
     def draw(self):
         if self.current_index >= len(self.questions):
@@ -28,16 +29,26 @@ class deck:
         self.current_index += 1
         return card, self.current_index, len(self.questions)
 
+    def reverse_draw(self):
+        if self.current_index < 2:
+            return 0
+        self.current_index -= 2
+        card = self.questions[self.current_index]
+        self.current_index += 1
+        return card, self.current_index, len(self.questions)
 
 if __name__ == "__main__":
     random_deck = deck()
     random_deck.load_deck()
     random_deck.shuffle()
-    card = random_deck.draw()
-
+    card, current_index, last_index = random_deck.draw()
     while card:
         return_key = input('Type in return: ')
         if return_key == "shuffle":
             random_deck.shuffle()
-        print(card)
-        card = random_deck.draw()
+        elif return_key == "reverse":
+            card, current_index, last_index = random_deck.reverse_draw()
+            print(f'{card} {current_index}/{last_index}')
+        else:
+            print(f'{card} {current_index}/{last_index}')
+        card, current_index, last_index = random_deck.draw()

@@ -17,21 +17,21 @@ def play_game():
 @app.route("/game/shuffle", methods=['POST'])
 def shuffle_deck():
     random_deck.shuffle()
-    return jsonify({"status":"Shuffled"})
+    card, current_index, last_index = random_deck.draw()
+    index = f'{current_index}/{last_index}'
+    return jsonify({"status":"Shuffled", "value": card, "index": index})
 
 @app.route("/game/draw", methods=["POST"])
 def draw_deck():
     card, current_index, last_index = random_deck.draw()
-    return jsonify({"status": card})
+    index = f'{current_index}/{last_index}'
+    return jsonify({"status":"Drew", "value": card, "index": index})
 
-
-@app.route("/posts")
-def posts():
-    return render_template('posts.html', posts=all_posts)
-
-@app.route("/")
-def index():
-    return render_template('index.html')
+@app.route("/game/reverse", methods=["POST"])
+def reverse_draw():
+    card, current_index, last_index = random_deck.reverse_draw()
+    index = f'{current_index}/{last_index}'
+    return jsonify({"status":"Reversed", "value": card, "index": index})
 
 if __name__ == "__main__":
     app.run(debug=True)
