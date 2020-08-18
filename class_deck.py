@@ -23,7 +23,7 @@ class deck:
 
     def draw(self):
         if self.current_index >= len(self.questions):
-            return 0
+            return  self.questions[self.current_index - 1], self.current_index, len(self.questions)
         card = self.questions[self.current_index]
         self.current_index += 1
         return card, self.current_index, len(self.questions)

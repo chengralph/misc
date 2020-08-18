@@ -11,20 +11,27 @@
     <img src ="{{ url_for('static', filename='images/covidflush.png') }}" width=400px height=600px onclick="goDraw()">
   </div>
   <div class="front_card" onclick="goReverse()">
-    <div id="card_value">
-      {{ card_value }}
+    <div id="card_value" style="font-size: 35px; text-align: left;">
+       {{ card_value }}
     </div>
   </div>
 </div>
-<div class="buttons_class">
-  <div id="index">
-    {{ index }}
-  </div>
-  <button class="btn_shuffle" type="button" onclick="goShuffle()">Shuffle</button>
-  <button class="btn_draw" type="button" onclick="goDraw()">Draw</button>
-  <button class="btn_reverse" type="button" onclick="goReverse()">Reverse</button>
+
+
+<div class="button_container">
+  <img src ="{{ url_for('static', filename='images/backward.png') }}" width=50px height=46px onclick="goReverse()">
+  <img src ="{{ url_for('static', filename='images/forward.png') }}" width=50px height=46px onclick="goDraw()">
 </div>
 
+
+
+<div id="index" style="font-size: 30px">
+  {{ index }}
+</div>
+
+<div class="shuffle">
+  <img src ="{{ url_for('static', filename='images/shuffle.png') }}" width=50px height=46px onclick="goShuffle()">
+</div>
 
 <style>
 
@@ -33,11 +40,10 @@
    width: 1000px;
    height: 700px;
    position: absolute;
-   left: 30%;
-   top: 30%;
-   /* margin-left: -1000px;
-   margin-top: -100px; */
+   left: 22%;
+   top: 20%;
    display: inline-block;
+   text-align: center;
 }
 
 
@@ -46,7 +52,7 @@
  width: 400px;
  height: 600px;
  background-color: rgba(255, 255, 255);
- border: thin black solid;
+ border: black solid;
  float:right
 }
 
@@ -58,17 +64,40 @@
   float: left
 }
 
+.shuffle
+{
+right: 0;
+float: right;
+margin-top: 40%;
+padding-right: 1%;
+
+}
 
 #card_value{
-  font: 200 px Arial, snas-serif;
+  padding: 10%;
+  font-size: 100px Arial;
 }
 
-.buttons_class
+#index
 {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
+  right: 0;
+  float: right;
+  margin-top: 40.5%;
+  margin-right: 2%;
 }
+
+.button_container
+{
+  width: 1000px;
+  height: 10px;
+  position: absolute;
+  left: 22%;
+  top: 90%;
+  display: inline-block;
+  text-align: center;
+}
+
+
 </style>
 
 <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

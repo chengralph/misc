@@ -9,6 +9,6 @@
 </head>
 <body>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
-  <font size="+10">{% block body %}{% endblock %}</font>
+  {% block body %}{% endblock %}
 </body>
 </html>
